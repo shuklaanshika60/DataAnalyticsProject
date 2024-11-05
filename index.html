@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard with Charts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Employee Management Dashboard</h1>
+    </header>
+    <main>
+        <div class="dashboard">
+            <!-- Total Employees Display -->
+            <div class="card">
+                <h2>Total Employees</h2>
+                <canvas id="totalEmployeesChart"></canvas>
+            </div>
+
+            <!-- Average Rating (Gauge Chart) -->
+            <div class="card">
+                <h2>Average Rating</h2>
+                <canvas id="averageRatingChart"></canvas>
+            </div>
+
+            <!-- Task Status Distribution (Pie Chart) -->
+            <div class="card">
+                <h2>Task Status Distribution</h2>
+                <canvas id="taskStatusChart"></canvas>
+            </div>
+
+            <!-- Employee Task Completion (Bar Chart) -->
+            <div class="card">
+                <h2>Employee Task Completion</h2>
+                <canvas id="taskCompletionChart"></canvas>
+            </div>
+
+            <!-- Goal Completion Status (Donut Chart) -->
+            <div class="card">
+                <h2>Goal Completion Status</h2>
+                <canvas id="goalCompletionChart"></canvas>
+            </div>
+
+            <!-- Overdue Tasks by Employee (Bar Chart) -->
+            <div class="card">
+                <h2>Overdue Tasks by Employee</h2>
+                <canvas id="overdueTasksChart"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
